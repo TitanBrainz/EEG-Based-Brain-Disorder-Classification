@@ -1,4 +1,4 @@
-# EEG Classification with Deep Learning Models
+# EEG-Based Brain Disorder Classification
 
 This project implements and compares various machine learning and deep learning models for classifying EEG data into 7 classes. The models include:
 
@@ -7,9 +7,27 @@ This project implements and compares various machine learning and deep learning 
 -   **ResNet**
 -   **GoogLeNet**
 
+---
+
+## Table of Contents
+
+1. [Introduction](#introduction)
+2. [Dataset](#dataset)
+3. [Project Workflow](#project-workflow)
+4. [How to Run the Project](#how-to-run-the-project)
+5. [Python Notebooks](#python-notebooks)
+6. [Results](#results)
+7. [Conclusion](#conclusion)
+8. [Future Work](#future-work)
+9. [Acknowledgments](#acknowledgments)
+
+---
+
 ## Introduction
 
 Electroencephalography (EEG) is a widely used technique to measure electrical activity in the brain. This project focuses on classifying EEG data into 7 distinct classes based on preprocessed features. The dataset undergoes preprocessing steps such as PCA for dimensionality reduction and SMOTE for class balancing. The models are trained and evaluated using metrics like accuracy, confusion matrices, and classification reports.
+
+---
 
 ## Dataset
 
@@ -22,6 +40,8 @@ The dataset used in this project is `EEG.machinelearing_data_BRMH.csv`, which co
     -   Imputation of missing values.
     -   Dimensionality reduction using PCA (99% variance retained).
     -   Class balancing using SMOTE.
+
+---
 
 ## Project Workflow
 
@@ -41,15 +61,24 @@ The dataset used in this project is `EEG.machinelearing_data_BRMH.csv`, which co
     - Evaluate models using accuracy, confusion matrices, and classification reports.
     - Compare model performance using training and validation accuracy/loss plots.
 
+---
+
 ## How to Run the Project
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+-   Python 3.8 or higher
+-   pip (Python package manager)
 
 ### Step 1: Clone the Repository
 
 Clone the repository to your local machine:
 
 ```bash
-git clone <repository-url>
-cd <repository-folder>
+git clone https://github.com/TitanBrainz/EEG-Based-Brain-Disorder-Classification.git
+cd EEG-Based-Brain-Disorder-Classification
 ```
 
 ### Step 2: Create a Virtual Environment
@@ -85,6 +114,8 @@ Use the `test_realtime.py` script to test the trained model with sample or custo
 python test_realtime.py
 ```
 
+---
+
 ## Python Notebooks
 
 The repository also includes Python notebooks for detailed experimentation and visualization:
@@ -92,15 +123,7 @@ The repository also includes Python notebooks for detailed experimentation and v
 -   `Final_EEG_Models(12class).ipynb`: Notebook for 12-class classification.
 -   `Final_EEG_Models(7class).ipynb`: Notebook for 7-class classification.
 
-## Output Plots
-
-### Training and Validation Accuracy Comparison
-
-![Figure 5](output_plots/run4/Figure_5.png)
-
-### Confusion Matrices
-
-![Figure 6](output_plots/run4/Figure_6.png)
+---
 
 ## Results
 
@@ -110,9 +133,32 @@ The models were evaluated on their ability to classify EEG data into 7 classes. 
 -   **Confusion Matrices**: Visual representation of true vs. predicted labels.
 -   **Classification Reports**: Precision, recall, and F1-score for each class.
 
+### Output Plots
+
+#### Training and Validation Accuracy Comparison
+
+![Training and Validation Accuracy](output_plots/run4/Figure_5.png)
+
+#### Confusion Matrices
+
+![Confusion Matrices](output_plots/run4/Figure_6.png)
+
+---
+
 ## Conclusion
 
 This project demonstrates the effectiveness of deep learning models in classifying EEG data. By leveraging advanced architectures like ResNet and GoogLeNet, the models achieve high accuracy and robust performance across all classes.
+
+---
+
+## Future Work
+
+-   Extend the classification to additional EEG datasets for broader generalization.
+-   Explore transfer learning with pre-trained models for improved performance.
+-   Implement real-time EEG signal classification using streaming data.
+-   Optimize hyperparameters using advanced techniques like Bayesian optimization.
+
+---
 
 ## Acknowledgments
 
