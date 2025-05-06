@@ -43,19 +43,54 @@ The dataset used in this project is `EEG.machinelearing_data_BRMH.csv`, which co
 
 ## How to Run the Project
 
-1. Clone the repository or download the project files.
-2. Ensure the following dependencies are installed:
-    - `numpy`
-    - `pandas`
-    - `scikit-learn`
-    - `tensorflow`
-    - `matplotlib`
-    - `seaborn`
-    - `imbalanced-learn`
-3. Run the following command to start training and evaluation:
-    ```bash
-    python train_compare_models.py
-    ```
+### Step 1: Clone the Repository
+
+Clone the repository to your local machine:
+
+```bash
+git clone <repository-url>
+cd <repository-folder>
+```
+
+### Step 2: Create a Virtual Environment
+
+Create and activate a virtual environment:
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
+```
+
+### Step 3: Install Requirements
+
+Install the required Python packages:
+
+```bash
+pip install -r requirements.txt
+```
+
+### Step 4: Run the Training Script
+
+Run the following command to start training and evaluation:
+
+```bash
+python train_compare_models.py
+```
+
+### Step 5: Test the Model
+
+Use the `test_realtime.py` script to test the trained model with sample or custom data:
+
+```bash
+python test_realtime.py
+```
+
+## Python Notebooks
+
+The repository also includes Python notebooks for detailed experimentation and visualization:
+
+-   `Final_EEG_Models(12class).ipynb`: Notebook for 12-class classification.
+-   `Final_EEG_Models(7class).ipynb`: Notebook for 7-class classification.
 
 ## Output Plots
 

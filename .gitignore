@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+dl_project/__pycache__/
+dl_project/*.py[cod]
+dl_project/*.pyo
+
+# Virtual environment
+dl_project/.venv/
+dl_project/env/
+dl_project/venv/
+dl_project/.idea/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Logs and temporary files
+*.log
+*.tmp
+*.bak
+*.swp
+
+# Ignore large files
+*.zip
+*.tar.gz
+*.rar
+*.7z
+
+# Ignore dataset files
+dl_project/data/
+dl_project/datasets/
+
+# Ignore model checkpoints
+dl_project/model_checkpoints/
+dl_project/eeg-classification-project/
+
+# Ignore large media files
+*.mp4
+*.mkv
+*.avi
+*.mov
+*.wav
+*.mp3
+
+# System files
+.DS_Store
+Thumbs.db
